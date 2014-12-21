@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Markdown</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./assets/es5-shim.min.js"></script>
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/lodash.js"></script>
+    <script src="./assets/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/bootstrap.css">
+    <script src="./assets/highlight.min.js"></script>
+    <link rel="stylesheet" href="./assets/solarized_light.min.css">
+    <script src="./assets/remarkable.js"></script>
+    <link rel="stylesheet" href="./assets/index.css">
+    <script src="./assets/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Markdown</h1>
+    </div>
+    <div class="container full-height">
+      <div class="row full-height">
+        <div class="col-xs-6 full-height">
+          <div class="demo-control"><a href="#" class="source-clear">clear</a><a id="permalink" href="./" title="Share this snippet as link"><strong>permalink</strong></a></div>
+		  <textarea class="source full-height">
+
+# 标题1
+## 标题2
+### 标题3
+#### 标题4
+##### 标题5
+###### 标题6
+
+
+## 我们是分割线
+
+___
+
+---
+
+***
+
+
+## 印刷符号
+
+(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+
+
+## 各种字体
+
+**我是粗体**
+
+__我也是粗体__
+
+*我是斜体*
+
+_我也是斜体_
+
+~~删除线~~
+
+上角标： 19^th^
+
+下角标： H~2~O
+
+++下划线++
+
+==荧光笔==
+
+
+## 引用
+
+
+&gt; 引用也可以嵌套
+&gt;&gt; 使用多个大于号进行嵌套
+&gt; &gt; &gt; 大于号之间可以存在空格
+
+
+## 列表
+
+符号列表
+
++ 使用 `+` `-` 或者 `*` 创建符号列表
++ 前加两个空格可以增加缩进
+  - 第二级别列表
+	* 第三级别列表1
+    + 第三级别列表2
+    - 第三级别列表3
+
+编号列表
+
+1. 数字加点 `1.` 开始编号列表
+2. 编号2
+3. 编号3
+
+
+1. 可以使用连续数字
+1. 也可以都使用数字 `1.`
+
+可以指定开始编号
+
+57. 有位移的编号
+1. 继续
+
+
+## 代码
+
+内联 `code`
+
+缩进代码
+
+    // 注释
+	行1
+	行2
+	行3
+
+
+代码块默认高亮
+
+```
+/**
+ * 我是一个类
+ */
+public class Main {
+	// main方法
+	public static void main(String args[]) {
+		System.out.println("Hello World!");
+	}
+}
+```
+
+语法高亮
+
+``` java
+/**
+ * 我是一个类
+ */
+public class Main {
+	// main方法
+	public static void main(String args[]) {
+		System.out.println("Hello World!");
+	}
+}
+```
+
+## 表格
+
+| 第一列 | 第二列 |
+| ------ | ----------- |
+| 数据1  | 第二列的数据1，这个数据需要比较长 |
+| 数据2  | 第二列的数据2，这个短点 |
+| 数据3  | 第二列的数据3 |
+
+数据右对齐
+
+| 第一列 | 第二列 |
+| -----: | ----------: |
+| 数据1  | 第二列的数据1，这个数据需要比较长 |
+| 数据2  | 第二列的数据2，这个短点 |
+| 数据3  | 第二列的数据3 |
+
+
+## 链接
+
+[超链接](http://www.baidu.com)
+[有title的链接](http://www.baidu.com &quot;百度&quot;)
+
+## 图片
+
+![图片](http://www.baidu.com/img/bd_logo1.png)
+![有title的图片](http://www.baidu.com/img/bd_logo1.png &quot;百度&quot;)
+
+有脚注的图片
+
+![有脚注的图片][id]
+
+图片脚注在此，你看不到
+
+[id]: http://www.baidu.com/img/bd_logo1.png &quot;百度&quot;
+
+
+## 脚注
+
+脚注 1 链接[^first].
+
+脚注 2 链接[^second].
+
+内联脚注 ^[内联脚注文本] 定义.
+
+重复脚注使用[^second].
+
+[^first]: 脚注 **可以加粗**
+
+    可以多行。
+
+[^second]: 脚注文本。
+
+
+</textarea>
+        </div>
+        <section class="col-xs-6 full-height">
+          <div class="demo-control"><a href="#" data-result-as="html">html</a><a href="#" data-result-as="src">source</a><a href="#" data-result-as="debug">debug</a></div>
+          <div class="result-html full-height"></div>
+          <pre class="result-src full-height"><code class="result-src-content full-height"></code></pre>
+          <pre class="result-debug full-height"><code class="result-debug-content full-height"></code></pre>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
