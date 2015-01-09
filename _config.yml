@@ -3,4 +3,4 @@ permalink: /:year/:title/
 paginate: 10
 exclude: []
 name: Jekyll Bootstrap
-baseurl: /wx-xw.github.io
+baseurl: 
