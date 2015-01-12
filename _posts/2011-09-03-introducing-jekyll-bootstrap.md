@@ -32,9 +32,15 @@ There is a config file at the root called `_config.yml`. By Default it looks lik
 	name: Jekyll Bootstrap
 	baseurl: /jekyll-bootstrap/
 
-```python
-print 'hello world'
-```
+{% highlight ruby %}
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end
+{% endhighlight %}
 
 You will need to change the `name` and `baseurl` fields. The others are optional.
 The `baseurl` field is used for the css files and pagination, if you are hosting the blog on github, you will need to change it to your repository name unless your repository is the same name as your github user name, which means you will need to have no value for `baseurl`.
