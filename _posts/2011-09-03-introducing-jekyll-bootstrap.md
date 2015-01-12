@@ -11,7 +11,9 @@ The advantage of jekyll is that it is self hosted (or hosted on github) and that
 ###Setting up
 To start you own blog, simply `git clone` the [repository on github](https://github.com/nhoss2/jekyll-bootstrap). You could also press the "fork" button on github.
 
+```
 	git clone git://github.com/nhoss2/jekyll-bootstrap.git
+```
 
 If you want to have your blog on github, make sure you change to the `gh-pages` branch.
 
