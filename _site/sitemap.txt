@@ -1,8 +1,0 @@
-
-http://wx-xw.github.io/archive.html
-http://wx-xw.github.io/categories.html
-http://wx-xw.github.io/index.html
-http://wx-xw.github.io/pages.html
-http://wx-xw.github.io/rss.xml
-http://wx-xw.github.io/sitemap.txt
-http://wx-xw.github.io/tags.html

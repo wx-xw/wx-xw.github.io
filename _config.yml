@@ -8,10 +8,10 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : 王旭的博客
+title : 旭的博客
 tagline: Site Tagline
 author :
-  name : 王旭
+  name : 旭
   email : wx_xw@live.cn
   github : wx-xw
 
