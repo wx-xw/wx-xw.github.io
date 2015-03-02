@@ -20,3 +20,5 @@ _site/tags.html
 _site/cracking the coding interview/2015/02/16/Solutions-1.2/index.html
 
 _site/cracking the coding interview/2015/03/02/Solutions-1.5/index.html
+
+*.swp
