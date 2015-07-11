@@ -3,14 +3,12 @@
 permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-markdown: redcarpet
-redcarpet:
-    extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
+highlighter: pygments
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : 王旭的博客
+title : 旭的博客
 tagline: Site Tagline
 author :
   name : 旭
