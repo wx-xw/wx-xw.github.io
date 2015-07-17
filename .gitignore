@@ -41,3 +41,5 @@ nohup.out
 
 _site/*
 *简历*
+
+*.plist
