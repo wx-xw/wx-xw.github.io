@@ -5,16 +5,15 @@ tags: [solr,搜索]
 
 ---
 
-#solr的schema说明（一）
-###&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——solr的域类型
+## 域类型定义以及属性
 
-##域类型定义以及属性
 - 名称（必须）
 - 域类型的java实现类（必须）
 - 如果域类型是文本域，可以定义一种分词方式
 - 域类型的属性，根据不同的域实现类，一些属性是不同的，一些属性是必须的
 
-###域类型在schema.xml中定义
+### 域类型在schema.xml中定义
+
 - 在schema.xml中定义
 - 使用名字为fieldType的xml标签定义
 - 域类型的实现类需要是存在的正确实现的类
@@ -39,14 +38,16 @@ ignoreCase="true" expand="true"/>
 </fieldType>
 ```
 
-###域类型属性
+### 域类型属性
+
 >不同的类，会存在一些不同的属性。
 
 ```xml
 <fieldType name="date" class="solr.TrieDateField" sortMissingLast="true" omitNorms="true"/>
 ```
 
-###域类型通用属性
+### 域类型通用属性
+
 | 属性 | 描述 | 值 |
 |--------|--------|--------|
 | name | 域类型的名称。这个值在域定义的“type”属性中使用。</br>强烈建议，但是不是强制性，这个值只以字母数字以及下划线组成并且不能以数字开头 ||
@@ -56,7 +57,8 @@ ignoreCase="true" expand="true"/>
 | docValuesFormat | 在使用这个域类型的域中使用DocValuesFormat，需要有额外声明，例如在solrconfig.xml声明SchemaCodecFactory | n/a |
 | postingsFormat | 与docValuesFormat类似 | n/a |
 
-###域默认属性
+### 域默认属性
+
 | 属性 | 描述 | 值 |
 |--------|--------|--------|
 | indexed | 如果true，域可以用于检索到数据 | true或false |
@@ -70,7 +72,8 @@ ignoreCase="true" expand="true"/>
 | termVectors<br>termPositions<br>termOffsets<br>termPayloads | 这些属性设置为true可以加速高亮或者其他的辅助功能的效率，但是对于倒排索引所占空间的增长是可观的，一般是使用不到的 | true或false |
 | required | 默认是false，如果是true，则这个域的值是必须的 | true或false |
 
-##solr自带的域类型
+## solr自带的域类型
+
 | 属性 | 描述 |
 |--------|--------|
 | BinaryField | 二进制数据 |

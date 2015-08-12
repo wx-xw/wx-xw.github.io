@@ -5,10 +5,11 @@ tags: [python]
 
 ---
 
-#python的map方法
+
 > map(function, sequence[, sequence, ...]) -> list
 
-###空方法
+### 空方法
+
 ```python
 
 list1 = [1, 2, 3]
@@ -32,7 +33,9 @@ print type(result[0]) # tuple
 print result # [(1, 4, 7), (2, 5, 8), (3, 6, 9)]
 
 ```
-###方法调用
+
+### 方法调用
+
 ```python
 
 list1 = [1, 2, 3]
@@ -53,7 +56,9 @@ def add(x, y, z):
 print map(add, list1, list2, list3) # [12, 15, 18]
 print map(add, list1, list2) # add() takes exactly 3 arguments (2 given)
 ```
-###lambda表达式
+
+### lambda表达式
+
 ```python
 
 list1 = [1, 2, 3]

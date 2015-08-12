@@ -5,9 +5,21 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
-markdown: redcarpet
-redcarpet:
-    extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
+#markdown: redcarpet
+#redcarpet:
+#    extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
+
+markdown: kramdown 
+kramdown:
+  input: GFM
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+  use_coderay: true
+  syntax_highlighter: rouge
+  coderay:
+    coderay_line_numbers:  nil
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
